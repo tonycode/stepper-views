@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:layout_width="match_parent"
+    tools:layout_height="wrap_content"
+    tools:orientation="horizontal"
+    tools:gravity="center_vertical"
+    >
+
+    <ImageButton
+        android:id="@+id/buttonDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/sv_round_remove_24"
+        android:contentDescription="@string/sv_hint_decrease_value"
+        />
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:inputType="numberSigned"
+        tools:text="123"
+        android:hint="@string/sv_hint_value"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/sv_round_add_24"
+        android:contentDescription="@string/sv_hint_increase_value"
+        />
+
+</merge>

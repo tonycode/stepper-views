@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <dev.tonycode.stepperviews.IntStepperView
+        android:id="@+id/intStepperView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/demoParamsCard"
+        android:layout_margin="80dp"
+        app:isv_value="4"
+        app:isv_minValue="0"
+        app:isv_maxValue="10"
+        app:isv_step="2"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/demoParamsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="56dp"
+            >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalHalf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"
+                />
+
+            <TextView
+                android:id="@+id/valueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/valueInput"
+                app:layout_constraintEnd_toStartOf="@id/guidelineVerticalHalf"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/valueInput"
+                android:gravity="end"
+                android:text="value"
+                />
+
+            <EditText
+                android:id="@+id/valueInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/guidelineVerticalHalf"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="number"
+                tools:text="5"
+                />
+
+            <TextView
+                android:id="@+id/minValueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/minValueInput"
+                app:layout_constraintEnd_toStartOf="@id/guidelineVerticalHalf"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/minValueInput"
+                android:gravity="end"
+                android:text="minValue"
+                />
+
+            <EditText
+                android:id="@+id/minValueInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/guidelineVerticalHalf"
+                app:layout_constraintTop_toBottomOf="@id/valueInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="number"
+                tools:text="1"
+                />
+
+            <TextView
+                android:id="@+id/maxValueLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/maxValueInput"
+                app:layout_constraintEnd_toStartOf="@id/guidelineVerticalHalf"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/maxValueInput"
+                android:gravity="end"
+                android:text="maxValue"
+                />
+
+            <EditText
+                android:id="@+id/maxValueInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/guidelineVerticalHalf"
+                app:layout_constraintTop_toBottomOf="@id/minValueInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="number"
+                tools:text="10"
+                />
+
+            <TextView
+                android:id="@+id/stepLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/stepInput"
+                app:layout_constraintEnd_toStartOf="@id/guidelineVerticalHalf"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/stepInput"
+                android:gravity="end"
+                android:text="step"
+                />
+
+            <EditText
+                android:id="@+id/stepInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/guidelineVerticalHalf"
+                app:layout_constraintTop_toBottomOf="@id/maxValueInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:inputType="number"
+                tools:text="1"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

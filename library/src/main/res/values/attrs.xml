@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IntStepperView">
+        <attr name="isv_value" format="integer" />
+        <attr name="isv_minValue" format="integer" />
+        <attr name="isv_maxValue" format="integer" />
+        <attr name="isv_step" format="integer" />
+    </declare-styleable>
+
+</resources>
