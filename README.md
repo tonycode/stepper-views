@@ -58,7 +58,7 @@ User can click on increase/decrease buttons or directly input a value (as in `an
 ```
 
 ```kotlin
-// configure programatically
+// configure programmatically
 vb.intStepperView1.apply {
     value = 0
     minValue = -100
