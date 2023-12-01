@@ -51,8 +51,8 @@ android {
         release {
             signingConfig = signingConfigs.getByName("release")
             // https://developer.android.com/studio/build/shrink-code
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            //isMinifyEnabled = true
+            //proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 
