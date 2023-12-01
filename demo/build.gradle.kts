@@ -10,8 +10,8 @@ android {
 
     defaultConfig {
         applicationId = "dev.tonycode.stepperviews.sample"
-        versionCode = 1
-        versionName = "0.1.0-SNAPSHOT"
+        versionCode = 2
+        versionName = "0.1.0"
         archivesName = "stepper-views-sample-v$versionName-build_$versionCode"
 
         minSdk = libs.versions.minSdk.get().toInt()

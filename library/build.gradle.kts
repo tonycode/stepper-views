@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+
+    `maven-publish`
 }
 
 android {
@@ -53,10 +55,67 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
     //// Core
     implementation(libs.kotlin.stdlib.jdk8)
     implementation(libs.androidx.core.ktx)
+}
+
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.tonycode"
+            artifactId = rootProject.name
+            version = "0.1.0"
+
+            configurePom()
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+fun MavenPublication.configurePom() {
+    pom {
+        name = rootProject.name
+        description = "Android ui-components that implement \"stepper behavior\""
+        url = "https://github.com/tonycode/stepper-views"
+
+        licenses {
+            license {
+                name = "MIT License"
+                url = "https://github.com/tonycode/stepper-views/blob/main/LICENSE"
+            }
+        }
+
+        developers {
+            developer {
+                id = "tonycode"
+                name = "Anton Vasilev"
+                email = "opensource@tonycode.dev"
+                organization = "tonycode"
+                organizationUrl = "https://tonycode.dev/"
+            }
+        }
+
+        scm {
+            connection = "scm:git:git://github.com/tonycode/stepper-views.git"
+            developerConnection = "scm:git:git@github.com:tonycode/stepper-views.git"
+            url = "https://github.com/tonycode/stepper-views"
+        }
+    }
 }

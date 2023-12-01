@@ -1,6 +1,8 @@
 StepperViews
 ============
 
+[![Release](https://jitpack.io/v/jitpack/stepper-views.svg)](https://jitpack.io/#jitpack/stepper-views)
+
 Android ui-components that implement "stepper behavior"
 
 > You can change component's value without using keyboard
@@ -9,6 +11,23 @@ Android ui-components that implement "stepper behavior"
 
 - written in Kotlin
 - `minSdk` = 16
+
+
+## Usage
+
+```kotlin
+repositories {
+    //...
+    maven("https://jitpack.io")
+}
+```
+
+```kotlin
+dependencies {
+    //...
+    implementation("com.github.tonycode:stepper-views:0.1.0")
+}
+```
 
 
 ## IntStepperView
