@@ -1,7 +1,7 @@
 StepperViews
 ============
 
-[![Release](https://jitpack.io/v/jitpack/stepper-views.svg)](https://jitpack.io/#jitpack/stepper-views)
+![Release](https://jitpack.io/v/tonycode/stepper-views.svg)
 
 Android ui-components that implement "stepper behavior"
 
