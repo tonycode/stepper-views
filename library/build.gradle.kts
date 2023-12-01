@@ -84,9 +84,6 @@ publishing {
             }
         }
     }
-    repositories {
-        mavenLocal()
-    }
 }
 
 fun MavenPublication.configurePom() {
