@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    namespace = "dev.tonycode.stepperviews.sample"
+    namespace = "dev.tonycode.stepperviews.demo"
 
     defaultConfig {
-        applicationId = "dev.tonycode.stepperviews.sample"
+        applicationId = "dev.tonycode.stepperviews.demo"
         versionCode = 2
         versionName = "0.1.0"
-        archivesName = "stepper-views-sample-v$versionName-build_$versionCode"
+        archivesName = "stepper-views-demo-v$versionName-build_$versionCode"
 
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()

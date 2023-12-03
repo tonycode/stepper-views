@@ -1,10 +1,10 @@
-package dev.tonycode.stepperviews.sample
+package dev.tonycode.stepperviews.demo
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import dev.tonycode.stepperviews.sample.databinding.MainActivityBinding
-import dev.tonycode.stepperviews.sample.util.onTextChangedFromUi
+import dev.tonycode.stepperviews.demo.databinding.MainActivityBinding
+import dev.tonycode.stepperviews.demo.util.onTextChangedFromUi
 
 
 class MainActivity : AppCompatActivity() {

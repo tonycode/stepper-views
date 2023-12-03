@@ -1,4 +1,4 @@
-package dev.tonycode.stepperviews.sample.util
+package dev.tonycode.stepperviews.demo.util
 
 import android.view.View
 import android.view.inputmethod.EditorInfo
