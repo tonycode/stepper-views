@@ -10,8 +10,8 @@
 
     <ImageButton
         android:id="@+id/buttonDecrease"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/sv_button_size"
+        android:layout_height="@dimen/sv_button_size"
         android:src="@drawable/sv_round_remove_24"
         android:contentDescription="@string/sv_hint_decrease_value"
         />
@@ -29,8 +29,8 @@
 
     <ImageButton
         android:id="@+id/buttonIncrease"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/sv_button_size"
+        android:layout_height="@dimen/sv_button_size"
         android:src="@drawable/sv_round_add_24"
         android:contentDescription="@string/sv_hint_increase_value"
         />
