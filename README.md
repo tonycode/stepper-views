@@ -72,6 +72,14 @@ vb.intStepperView1.onChangeListener = { value: Int ->
 }
 ```
 
+| xml-attribute  | property           | description                                            |  default value  |
+|:---------------|:-------------------|:-------------------------------------------------------|:---------------:|
+| `isv_value`    | `value`            | Current value displayed in this stepper-view           |       `0`       |
+| `isv_minValue` | `minValue`         | The `value` property can't be less than this number    | `Int.MIN_VALUE` |
+| `isv_maxValue` | `maxValue`         | The `value` property can't be greater than this number | `Int.MAX_VALUE` |
+| `isv_step`     | `step`             | The step to increase/decrease `value` property         |       `1`       |
+|                | `onChangeListener` | Callback upon `value` property change                  |     `null`      |
+
 
 ## License
 
