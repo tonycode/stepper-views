@@ -25,7 +25,7 @@ repositories {
 ```kotlin
 dependencies {
     //...
-    implementation("com.github.tonycode:stepper-views:0.1.0")
+    implementation("com.github.tonycode:stepper-views:0.1.1")
 }
 ```
 
