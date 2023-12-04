@@ -129,6 +129,7 @@ class IntStepperView @JvmOverloads constructor(
         vb.editTextValue.onTextChangedFromUi { text ->
             text.toIntOrNull()?.let {
                 value = it
+                onChangeListener?.invoke(it)
             }
         }
     }

@@ -1,7 +1,11 @@
 StepperViews
 ============
 
-![Release](https://jitpack.io/v/tonycode/stepper-views.svg)
+[![Platform](http://img.shields.io/badge/platform-android-brightgreen.svg?style=flat)](https://developer.android.com)
+[![Language](http://img.shields.io/badge/language-kotlin-blue.svg?style=flat)](https://kotlinlang.org)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![API](https://img.shields.io/badge/API-16%2B-blue.svg?style=flat)](https://apilevels.com)
+[![Release](https://jitpack.io/v/tonycode/stepper-views.svg)](https://jitpack.io/#tonycode/stepper-views)
 
 Android ui-components that implement "stepper behavior"
 
@@ -9,11 +13,7 @@ Android ui-components that implement "stepper behavior"
 > by only tapping "increase/decrease" or "next/previous" buttons
 
 
-- written in Kotlin
-- `minSdk` = 16
-
-
-## Usage
+## Gradle
 
 ```kotlin
 repositories {
@@ -71,6 +71,14 @@ vb.intStepperView1.onChangeListener = { value: Int ->
     Log.d(TAG, "value is $value")
 }
 ```
+
+| xml-attribute  | property           | description                                            |  default value  |
+|:---------------|:-------------------|:-------------------------------------------------------|:---------------:|
+| `isv_value`    | `value`            | Current value displayed in this stepper-view           |       `0`       |
+| `isv_minValue` | `minValue`         | The `value` property can't be less than this number    | `Int.MIN_VALUE` |
+| `isv_maxValue` | `maxValue`         | The `value` property can't be greater than this number | `Int.MAX_VALUE` |
+| `isv_step`     | `step`             | The step to increase/decrease `value` property         |       `1`       |
+|                | `onChangeListener` | Callback upon `value` property change                  |     `null`      |
 
 
 ## License

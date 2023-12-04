@@ -2,9 +2,13 @@
 <resources>
 
     <declare-styleable name="IntStepperView">
+        <!-- Current value displayed in this stepper-view -->
         <attr name="isv_value" format="integer" />
+        <!-- The {@code value} property can't be less than this number -->
         <attr name="isv_minValue" format="integer" />
+        <!-- The {@code value} property can't be greater than this number -->
         <attr name="isv_maxValue" format="integer" />
+        <!-- The step to increase/decrease {@code value} property -->
         <attr name="isv_step" format="integer" />
     </declare-styleable>
 
